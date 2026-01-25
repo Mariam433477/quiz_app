@@ -26,8 +26,8 @@ class QuizNavigationButtons extends StatelessWidget {
                         context.read<QuizCubit>().previousQuestion();
                       },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: ColorsManager.navPrevBg,
-                  foregroundColor: ColorsManager.navPrevText,
+                  backgroundColor: ColorsManager.white,
+                  foregroundColor: ColorsManager.black87,
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(16),
@@ -39,7 +39,7 @@ class QuizNavigationButtons extends StatelessWidget {
                   ),
                   elevation: 0,
                   disabledBackgroundColor:
-                      ColorsManager.navPrevDisabledBg,
+                      ColorsManager.white,
                   disabledForegroundColor:
                       ColorsManager.navPrevDisabledText,
                 ),
@@ -58,7 +58,7 @@ class QuizNavigationButtons extends StatelessWidget {
                         context.read<QuizCubit>().nextQuestion();
                       },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: ColorsManager.navNextBg,
+                  backgroundColor: ColorsManager.amber,
                   foregroundColor: ColorsManager.navNextText,
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   shape: RoundedRectangleBorder(

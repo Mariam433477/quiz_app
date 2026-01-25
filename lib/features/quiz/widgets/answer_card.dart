@@ -27,12 +27,12 @@ class AnswerCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: isSelected
               ? ColorsManager.answerSelectedBg
-              : ColorsManager.answerUnselectedBg,
+              : ColorsManager.white,
           borderRadius: BorderRadius.circular(16),
           border: Border.all(
             color: isSelected
-                ? ColorsManager.answerSelectedBorder
-                : ColorsManager.answerUnselectedBorder,
+                ? ColorsManager.amber
+                : ColorsManager.transparent,
             width: 2,
           ),
           boxShadow: [
@@ -53,11 +53,11 @@ class AnswerCard extends StatelessWidget {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: isSelected
-                    ? ColorsManager.answerCircleSelected
+                    ? ColorsManager.amber
                     : ColorsManager.answerCircleUnselected,
                 border: Border.all(
                   color: isSelected
-                      ? ColorsManager.answerCircleBorderSelected
+                      ? ColorsManager.amber
                       : ColorsManager.answerCircleBorderUnselected,
                 ),
               ),
@@ -74,7 +74,7 @@ class AnswerCard extends StatelessWidget {
               child: Text(
                 text,
                 style: TextStyle(
-                  color: ColorsManager.answerText,
+                  color: ColorsManager.black87,
                   fontWeight:
                       isSelected ? FontWeight.bold : FontWeight.w500,
                   fontSize: 16,

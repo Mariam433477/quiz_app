@@ -22,7 +22,7 @@ class TimerWidget extends StatelessWidget {
       width: 80,
       height: 80,
       decoration: BoxDecoration(
-        color: ColorsManager.timerBackground,
+        color: ColorsManager.white,
         shape: BoxShape.circle,
         boxShadow: [
           BoxShadow(
@@ -44,8 +44,8 @@ class TimerWidget extends StatelessWidget {
               backgroundColor: ColorsManager.timerProgressBg,
               valueColor: AlwaysStoppedAnimation<Color>(
                 isWarning
-                    ? ColorsManager.timerWarning
-                    : ColorsManager.timerNormal,
+                    ? ColorsManager.red
+                    : ColorsManager.amber,
               ),
             ),
           ),
@@ -53,8 +53,8 @@ class TimerWidget extends StatelessWidget {
             seconds.toString(),
             style: TextStylesManager.bold24.copyWith(
               color: isWarning
-                  ? ColorsManager.timerTextWarning
-                  : ColorsManager.timerTextNormal,
+                  ? ColorsManager.red
+                  : ColorsManager.black87,
             ),
           ),
         ],

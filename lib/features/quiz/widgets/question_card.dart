@@ -16,7 +16,7 @@ class QuestionCard extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
-        color: ColorsManager.questionCardBackground,
+        color: ColorsManager.white,
         borderRadius: BorderRadius.circular(24),
         boxShadow: [
           BoxShadow(
@@ -31,7 +31,7 @@ class QuestionCard extends StatelessWidget {
         textAlign: TextAlign.center,
         style: TextStylesManager.bold18.copyWith(
           height: 1.5,
-          color: ColorsManager.questionText,
+          color: ColorsManager.black87,
         ),
       ),
     );

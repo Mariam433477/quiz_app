@@ -69,7 +69,7 @@ class QuizScreen extends StatelessWidget {
                           Text(
                             'Quiz Completed!',
                             style: TextStylesManager.bold24.copyWith(
-                              color: ColorsManager.textPrimary,
+                              color: ColorsManager.white,
                             ),
                           ),
                           verticalSpace16,
@@ -83,7 +83,7 @@ class QuizScreen extends StatelessWidget {
                           Text(
                             '${state.score} / ${state.total}',
                             style: TextStylesManager.bold48.copyWith(
-                              color: ColorsManager.textPrimary,
+                              color: ColorsManager.white,
                             ),
                           ),
                           verticalSpace32,
@@ -95,9 +95,9 @@ class QuizScreen extends StatelessWidget {
                               },
                               style: ElevatedButton.styleFrom(
                                 backgroundColor:
-                                    ColorsManager.buttonBackground,
+                                    ColorsManager.amber,
                                 foregroundColor:
-                                    ColorsManager.buttonText,
+                                    ColorsManager.black87,
                                 padding:
                                     const EdgeInsets.symmetric(vertical: 16),
                                 shape: RoundedRectangleBorder(

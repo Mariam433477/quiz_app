@@ -32,7 +32,7 @@ class QuestionHeader extends StatelessWidget {
                   Text(
                     'Question $current/$total',
                     style: TextStylesManager.bold20.copyWith(
-                      color: ColorsManager.headerTitle,
+                      color: ColorsManager.white,
                     ),
                   ),
                verticalSpace4,
@@ -63,7 +63,7 @@ class QuestionHeader extends StatelessWidget {
               child: Text(
                 difficulty,
                 style: TextStylesManager.medium12.copyWith(
-                  color: ColorsManager.headerBadgeText,
+                  color: ColorsManager.white,
                 ),
               ),
             ),
@@ -77,7 +77,7 @@ class QuestionHeader extends StatelessWidget {
             minHeight: 8,
             backgroundColor: ColorsManager.progressBackground,
             valueColor: const AlwaysStoppedAnimation(
-              ColorsManager.progressValue,
+              ColorsManager.amber,
             ),
           ),
         ),
